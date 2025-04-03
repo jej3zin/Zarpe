@@ -1,0 +1,28 @@
+.head {
+  height: 32vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--Bg2);
+}
+.center {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  font-size: 2rem;
+  font-synthesis-style: auto;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: var(--Col);
+}
+.head-icons {
+  padding: 0.2rem;
+  font-size: 1.2rem;
+  color: var(--Col);
+  cursor: pointer;
+  border: 1px solid red;
+}
