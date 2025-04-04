@@ -1,0 +1,26 @@
+.foot {
+  padding: 2rem 14.25rem;
+  background: var(--Bg2);
+}
+#FootBoxCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.BarLine {
+  height: 2rem;
+  width: 0.1rem;
+  margin: 0 1rem;
+  padding: 0.05rem;
+  background: var(--Col);
+}
+.Social-a {
+  font-size: 1.5rem;
+  color: var(--Col);
+}
+.Foot-Copy {
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--Col);
+}

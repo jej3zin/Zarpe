@@ -1,12 +1,15 @@
-<h1>⚡| Titulo</h1>
+<h1>⚡| Zarpe website Fashion</h1>
 
 <h2>🌐| Description</h2>
-<p>aaaaaa</p>
+<p>fashion website, with simple layout.</p>
+<li>Pre-loading</li>
+<li>Layout Responsive</li>
 <br>
 
 <div aligs="center">
   <img align="center" alt="HTML" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
   <img align="center" alt="CSS" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+  <img align="center" alt="JS" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
 </div>
 
 <h2>⚖️| Licence</h2>

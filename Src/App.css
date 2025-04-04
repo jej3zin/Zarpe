@@ -5,12 +5,11 @@
   box-sizing: border-box;
   font-family: 'Noto Serif Display', Arial, Helvetica, sans-serif;
 }
-@import 'tailwindcss';
 :root {
   --Bg: #222;
   --Bg2: #111;
   --Col: #ddd;
-
+  --Col-Kus: #767676;
   --Ani: 0.3s ease-in-out all;
 }
 Body {
@@ -42,6 +41,7 @@ Body {
 }
 .Bg-Model {
   height: 60vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,7 +55,7 @@ Body {
   filter: brightness(70%);
 }
 .newCollection {
-  padding: 2rem 4rem;
+  padding: 1rem 2rem;
   font-size: 2rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -65,30 +65,33 @@ Body {
   background: rgb(17, 17, 17, 0.5);
   border: 1px solid rgb(221, 221, 221, 0.5);
 }
-/* Shop Collection */
-.Shop {
-  padding: 3rem;
+/* Main */
+.main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
-.ShopTitle {
-  padding: 0.8rem;
-  font-size: 2rem;
-  text-align: center;
+#MainBoxCenter {
+  padding: 0rem 14.25rem;
+}
+/* Title & Texts */
+.titleMain {
+  padding: 0.5rem 0;
+  font-size: 1.8rem;
   color: var(--Col);
 }
+/* Shop Collection */
+.Shop {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
 .Shop-ul {
-  width: 100%;
   list-style: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
+  justify-content: space-between;
 }
 .Shop-a {
-  font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--Col);
@@ -97,7 +100,6 @@ Body {
 }
 .Shop-a img {
   height: 14rem;
-  object-fit: cover;
 }
 .text-img {
   display: flex;
@@ -106,4 +108,124 @@ Body {
 }
 .text-img ion-icon {
   font-size: 1.1rem;
+}
+/* About */
+.About {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.AboutBox {
+  display: flex;
+  position: relative;
+}
+.AboutImage {
+  height: 22rem;
+}
+.AboutImage2 {
+  height: 5rem;
+  position: absolute;
+  right: -2rem;
+  bottom: -2rem;
+  border-radius: 50%;
+}
+.Columns2 {
+  display: flex;
+  flex-direction: column;
+}
+.AboutP {
+  padding: 1rem 0;
+  font-size: 1rem;
+  color: var(--Col);
+}
+.ContactUs {
+  width: max-content;
+  margin: auto 0 0;
+  padding: 0.6rem 2rem;
+  font-weight: bold;
+  color: var(--Col);
+  cursor: pointer;
+  border: 1px solid var(--Col);
+  background: var(--Bg);
+  &:hover {
+    color: var(--Bg);
+    background: var(--Col);
+    border: 1px solid var(--Col);
+  }
+}
+.Gallery {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.Gallery-ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.1rem;
+}
+.Gallery-item {
+  list-style: none;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  transition: var(--Ani);
+  &:hover {
+    scale: 1.05;
+  }
+}
+.Gallery-item:hover .Gallery-Content {
+  opacity: 1;
+  transform: translateY(0rem);
+  transition: var(--Ani);
+}
+.Gallery-Content {
+  width: 100%;
+  padding: 0 0.6rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--Col);
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  background: rgba(34, 34, 34, 0.4);
+  transform: translateY(2rem);
+  transition: var(--Ani);
+}
+.Gallery-item img {
+  height: 14rem;
+}
+/* Loading */
+div#preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+  background-color: var(--Bg);
+}
+.loader {
+  color: var(--Col);
+  display: flex;
+  gap: 2rem;
+}
+.circle {
+  height: 3rem;
+  width: 3rem;
+  border: 0.3rem solid var(--Col-Kus);
+  border-top: 0.3rem solid var(--Col);
+  border-radius: 50%;
+  animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

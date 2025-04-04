@@ -12,79 +12,158 @@
     <meta name="copyright" content="© 2025 jej3zin" />
     <link rel="stylesheet" href="./Src/App.css" />
     <link rel="stylesheet" href="./Layout/Header/header.css" />
+    <link rel="stylesheet" href="./Layout/Footer/Footer.css" />
     <link rel="icon" href="./Asset/Logotipo.png" />
   </head>
   <body>
+    <div id="preloader">
+      <div id="status">&nbsp;</div>
+      <div class="loader">
+        <span class="circle"></span>
+      </div>
+    </div>
+
     <header class="head">
-      <div class="center">
-        <ion-icon class="head-icons" name="search-outline"></ion-icon>
+      <div id="HeadBoxCenter">
+        <ion-icon class="head-icons" name="search"></ion-icon>
         <a href="Index.html" class="title" title="Página Inicial">Zarpe</a>
-        <ion-icon class="head-icons" name="bag-handle"></ion-icon>
+        <img src="./Asset/Ionicons/bag.svg" class="head-icons" alt="" />
       </div>
     </header>
 
     <nav class="menu">
       <ul class="menu-ul">
-        <li><a href="#" class="menu-a">Home</a></li>
-        <li><a href="#" class="menu-a">Gallery</a></li>
-        <li><a href="#" class="menu-a">Contact</a></li>
+        <li><a href="Index.html" class="menu-a">Home</a></li>
+        <li><a href="Index.html" class="menu-a">Gallery</a></li>
+        <li><a href="Index.html" class="menu-a">Contact</a></li>
       </ul>
     </nav>
 
     <main class="main">
       <section class="Bg-Model">
         <img src="./Asset/Bg-Model.png" alt="Cover" />
-        <h2 class="newCollection">collection</h2>
+        <h2 class="newCollection">new collection</h2>
       </section>
+      <div id="MainBoxCenter">
+        <section class="Shop">
+          <h2 class="titleMain">Explore our Store</h2>
+          <ul class="Shop-ul">
+            <li>
+              <a href="" class="Shop-a">
+                <img src="./Asset/Photo_Model-1.png" alt="" />
+                <div class="text-img">
+                  bags
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+              </a>
+            </li>
 
-      <section class="Shop">
-        <h2 class="ShopTitle caret-emerald-500 p-10">Shop</h2>
-        <ul class="Shop-ul">
-          <li>
-            <a href="" class="Shop-a">
+            <li>
+              <a href="" class="Shop-a">
+                <img src="./Asset/Photo_Model-2.png" alt="" />
+                <div class="text-img">
+                  accessories
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="" class="Shop-a">
+                <img src="./Asset/Photo_Model-3.png" alt="" />
+                <div class="text-img">
+                  Men's Fashion
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="" class="Shop-a">
+                <img src="./Asset/Photo_Model-5.png" alt="" />
+                <div class="text-img">
+                  Clothing
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="About">
+          <div class="AboutBox">
+            <img
+              class="AboutImage"
+              src="./Asset/Photo_Model-4.png"
+              alt="model"
+            />
+            <img class="AboutImage2" src="./Asset/Logotipo.png" alt="logo" />
+          </div>
+          <div class="Columns2">
+            <h2 class="titleMain">About Us</h2>
+            <p class="AboutP">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              eius placeat alias quae magni soluta, adipisci ullam voluptate
+              quia inventore commodi, facere nihil velit dolor eum. Pariatur
+              porro dolores praesentium. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Ipsum eius placeat alias quae magni soluta,
+              adipisci ullam voluptate quia inventore commodi, facere nihil
+              velit dolor eum. Pariatur porro dolores praesentium. Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Ipsum eius placeat
+              alias quae magni soluta, adipisci ullam voluptate quia inventore
+              commodi, facere nihil velit dolor eum. Pariatur porro dolores
+              praesentium.
+            </p>
+            <button class="ContactUs">Contact Us</button>
+          </div>
+        </section>
+
+        <section class="Gallery">
+          <h2 class="titleMain">Gallery</h2>
+          <ul class="Gallery-ul">
+            <li class="Gallery-item">
+              <img src="./Asset/Photo_Model-1.png" alt="" />
+              <div class="Gallery-Content">Ane Louse</div>
+            </li>
+            <li class="Gallery-item">
               <img src="./Asset/Photo_Model-2.png" alt="" />
-              <div class="text-img">
-                accessories
-                <ion-icon name="arrow-forward-outline"></ion-icon>
-              </div>
-            </a>
-          </li>
-
-          <li>
-            <a href="" class="Shop-a">
+              <div class="Gallery-Content">Maria Rose</div>
+            </li>
+            <li class="Gallery-item">
               <img src="./Asset/Photo_Model-3.png" alt="" />
-              <div class="text-img">
-                Men's Fashion
-                <ion-icon name="arrow-forward-outline"></ion-icon>
-              </div>
-            </a>
-          </li>
-
-          <li>
-            <a href="" class="Shop-a">
+              <div class="Gallery-Content">David Broker</div>
+            </li>
+            <li class="Gallery-item">
               <img src="./Asset/Photo_Model-4.png" alt="" />
-              <div class="text-img">
-                New Style
-                <ion-icon name="arrow-forward-outline"></ion-icon>
-              </div>
-            </a>
-          </li>
-
-          <li>
-            <a href="" class="Shop-a">
+              <div class="Gallery-Content">Alex Morgan</div>
+            </li>
+            <li class="Gallery-item">
               <img src="./Asset/Photo_Model-5.png" alt="" />
-              <div class="text-img">
-                Clothing
-                <ion-icon name="arrow-forward-outline"></ion-icon>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </section>
+              <div class="Gallery-Content">Susie Lo</div>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
 
-    <footer class="foot"></footer>
+    <footer class="foot">
+      <div id="FootBoxCenter">
+        <div class="BoxLogo-Social">
+          <a href="Index.html" class="title" title="Página Inicial">Zarpe</a>
+          <span class="BarLine"></span>
+          <a
+            href="https://github.com/jej3zin/Zarpe"
+            class="Social-a"
+            title="Repositório"
+            target="_blank"
+            ><ion-icon name="logo-github"></ion-icon
+          ></a>
+        </div>
+        <p class="Foot-Copy">&copy; 2025 By jej3zin</p>
+      </div>
+    </footer>
 
+    <script src="./Src/jquery.js"></script>
     <script src="./Src/App.js"></script>
     <script
       type="module"
