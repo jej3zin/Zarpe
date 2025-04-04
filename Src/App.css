@@ -267,6 +267,9 @@ div#preloader {
   .newCollection {
     font-size: 1.6rem;
   }
+  .Shop-ul {
+    place-items: center;
+  }
   .titleMain {
     text-align: center;
   }
