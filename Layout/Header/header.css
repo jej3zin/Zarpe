@@ -25,3 +25,13 @@
   cursor: pointer;
   z-index: 3;
 }
+@media screen and (max-width: 768px) {
+  .head {
+    padding: 2rem 8rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .head {
+    padding: 2rem 1rem;
+  }
+}
