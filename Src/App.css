@@ -12,6 +12,14 @@
   --Col-Kus: #767676;
   --Ani: 0.3s ease-in-out all;
 }
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background: var(--Bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--Col);
+  border-radius: 1rem;
+}
 Body {
   background: var(--Bg);
 }
@@ -82,21 +90,24 @@ Body {
 /* Shop Collection */
 .Shop {
   padding: 2rem 0;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-column: 1fr;
 }
 .Shop-ul {
   list-style: none;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1rem;
 }
 .Shop-a {
+  width: max-content;
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--Col);
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .Shop-a img {
   height: 14rem;
@@ -154,15 +165,17 @@ Body {
     border: 1px solid var(--Col);
   }
 }
+/* gallery */
 .Gallery {
   padding: 2rem 0;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 .Gallery-ul {
-  display: flex;
-  justify-content: center;
-  gap: 1.1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  place-items: center;
+  gap: 0.8rem;
 }
 .Gallery-item {
   list-style: none;
@@ -227,5 +240,55 @@ div#preloader {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 1440px) {
+  #MainBoxCenter {
+    padding: 0rem 8rem;
+  }
+  .About {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #MainBoxCenter {
+    padding: 0rem 4rem;
+  }
+  .AboutBox {
+    width: max-content;
+  }
+}
+@media screen and (max-width: 768px) {
+  #MainBoxCenter {
+    padding: 0rem 2rem;
+  }
+  .newCollection {
+    font-size: 1.6rem;
+  }
+  .titleMain {
+    text-align: center;
+  }
+  .text-img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: rgba(34, 34, 34, 0.5);
+  }
+  .Gallery-item {
+    overflow: visible;
+    &:hover {
+      scale: 1;
+    }
+  }
+  .Gallery-Content {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .newCollection {
+    font-size: 1rem;
   }
 }

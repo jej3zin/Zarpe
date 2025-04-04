@@ -24,3 +24,13 @@
   text-align: center;
   color: var(--Col);
 }
+@media screen and (max-width: 768px) {
+  .foot {
+    padding: 2rem 8rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .foot {
+    padding: 2rem 1rem;
+  }
+}
