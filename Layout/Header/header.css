@@ -21,7 +21,7 @@
   color: var(--Col);
 }
 .head-icons {
-  height: 2rem;
+  font-size: 2rem;
   color: var(--Col);
   cursor: pointer;
   z-index: 3;
